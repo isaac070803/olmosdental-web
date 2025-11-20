@@ -1,0 +1,250 @@
+/* ===== RESETEO BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+/* ===== SECCIÓN PRINCIPAL CON VIDEO ===== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Video de fondo */
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Capa encima del video (tono oscuro dorado suave) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.75)
+    );
+    /* si la quieres más dorada, cambia el gradiente por rgba(212,175,55,0.3) */
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 0;
+    right: 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 120px;
+}
+
+/* Lista del menú */
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+/* Cada item del menú */
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+/* Enlaces del menú */
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Línea dorada animada debajo del texto */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #d4af37;  /* dorado */
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/* Hover: aparece la línea */
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* ===== CONTENIDO CENTRAL ===== */
+.content {
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* ===== BOTONES ANIMADOS ===== */
+.content .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo base de los botones */
+.content button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #d4af37;   /* dorado */
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+/* Fondo animado dentro del botón */
+.content button span {
+    background: #d4af37;  /* dorado */
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+/* Hover: el dorado se expande */
+.content button:hover span {
+    width: 100%;
+}
+
+/* Hover: el texto pasa a negro */
+.content button:hover {
+    color: #000;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+   ========================= */
+   @media (max-width: 900px) {
+    .logo {
+        height: 80px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .content {
+        width: 90%;
+        top: 55%;
+    }
+
+    .content h1 {
+        font-size: 42px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content button {
+        width: 170px;
+        padding: 12px 0;
+        font-size: 16px;
+        margin: 10px 6px;
+    }
+}
+
+/* =========================
+   RESPONSIVE CELULAR
+   ========================= */
+
+   @media (max-width: 600px) {
+
+    /* Mueve el contenido más arriba para que se vea grande */
+    .content {
+        top: 50%; /* antes estaba en 60% */
+    }
+
+    /* Agranda el título en celular */
+    .content h1 {
+        font-size: 38px; /* más grande */
+    }
+
+    .content p {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    /* Ajusta el navbar para que no ocupe tanto espacio */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; /* separación mínima */
+        padding-top: 10px;
+    }
+
+    /* Agranda un poquito la separación del menú */
+    .menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
