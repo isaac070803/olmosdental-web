@@ -1,0 +1,368 @@
+/* Página de Limpieza Premium */
+.limpieza-premium-page {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8f4ee;
+    color: #111111;
+    margin: 0;
+}
+
+/* Tipografía tipo Olmos (títulos) */
+.limpieza-premium-page h1,
+.limpieza-premium-page h2,
+.limpieza-premium-page h3 {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    letter-spacing: 0.03em;
+    color: #111111;
+}
+
+/* Colores base */
+:root {
+    --oro: #c9a34a;
+    --oro-oscuro: #a17f31;
+    --negro: #111111;
+    --blanco: #ffffff;
+}
+
+/* Contenedores */
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* HERO */
+.hero-limpieza {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 2rem;
+}
+
+.hero-media .video-placeholder {
+    background: #000;
+    border-radius: 1.5rem;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    font-size: 0.95rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text h1 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+    color: var(--oro);
+}
+
+.hero-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.hero-price-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--oro);
+}
+
+/* Botón principal */
+.btn-primario {
+    display: inline-block;
+    padding: 0.85rem 1.7rem;
+    border-radius: 999px;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.85rem;
+    background: linear-gradient(135deg, var(--oro), var(--negro));
+    color: var(--blanco);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.btn-primario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+    filter: brightness(1.05);
+}
+
+/* Tabla limpieza */
+.tabla-limpieza {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tabla-limpieza .columna {
+    background: #fdfaf4;
+    border-radius: 1.3rem;
+    padding: 1.8rem 1.6rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.tabla-limpieza .columna h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.tabla-limpieza ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tabla-limpieza li {
+    margin-bottom: 0.45rem;
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: 0.93rem;
+}
+
+.tabla-limpieza li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--oro-oscuro);
+}
+
+.columna-premium {
+    border: 1.5px solid var(--oro);
+    background: #fff9ea;
+}
+
+/* Beneficios */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.beneficio-card {
+    background: #ffffff;
+    border-radius: 1.2rem;
+    padding: 1.4rem 1.2rem;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.06);
+    border-top: 3px solid var(--oro);
+    font-size: 0.9rem;
+}
+
+.beneficio-card h3 {
+    font-size: 0.95rem;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+/* Galería */
+.galeria-spa {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.foto-spa {
+    background: #dcd7cc;
+    border-radius: 1.2rem;
+    height: 130px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.06), transparent);
+}
+
+/* ---------------------------- */
+/* SECCIÓN: INVERSIÓN Y PAGOS  */
+/* ---------------------------- */
+
+.section-precio-metodos {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+.section-precio-metodos h2 {
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    color: #2f2a24;
+}
+
+/* GRID */
+.precio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+}
+
+.precio-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.6rem 1.8rem;
+    border: 1px solid #e8dcc7;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
+
+.precio-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    color: #3c3329;
+}
+
+.precio-monto {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    color: #4a4035;
+}
+
+.precio-monto strong {
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
+.precio-detalle {
+    margin-top: 0.8rem;
+    color: #6a645e;
+    font-size: 0.92rem;
+}
+
+/* TARJETA DESTACADA */
+.precio-card-destacado {
+    border-color: #d6b36e;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.08);
+}
+
+.precio-monto-grande {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #d1a24c;
+}
+
+.precio-ahorro {
+    margin: 0.8rem 0;
+    font-size: 0.95rem;
+    color: #7a6c58;
+}
+
+/* MSI */
+.precio-msi-opciones {
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid #e8dcc7;
+}
+
+.precio-msi-titulo {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #7d7468;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.06em;
+}
+
+.precio-msi-opciones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.precio-msi-opciones li {
+    padding: 0.1rem 0;
+    font-size: 0.95rem;
+    color: #4b443c;
+}
+
+.precio-msi-opciones strong {
+    color: #2f2f2f;
+}
+
+.precio-msi-nota {
+    margin-top: 0.6rem;
+    font-size: 0.83rem;
+    color: #8b8377;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .precio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* CTA final */
+.cta-final {
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+}
+
+.frase-final {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-limpieza {
+        grid-template-columns: 1fr;
+        padding-top: 2.5rem;
+    }
+
+    .hero-media .video-placeholder {
+        height: 210px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .galeria-spa {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .tabla-limpieza {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios-grid,
+    .galeria-spa {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-price-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

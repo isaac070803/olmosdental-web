@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consentimiento Informado - Olmos Dental</title>
+
+  <!-- CSS del consentimiento -->
+  <link rel="stylesheet" href="assets/css/consentimiento.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- ENCABEZADO CON LOGO Y MARCA -->
+    <header class="header-brand">
+      <div class="brand-left">
+        <!-- Cambia la ruta del src al archivo real de tu logo -->
+        <img src="assets/img/Logotiposinfondo.png" alt="Olmos Dental" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Olmos Dental</span>
+          <span class="brand-tagline">Cuidamos tu sonrisa con ciencia y detalle.</span>
+        </div>
+      </div>
+    </header>
+
+    <h1>Consentimiento Informado General Odontológico</h1>
+    <p class="subtitle">
+      Antes de continuar con tu tratamiento en Olmos Dental, te pedimos leer y aceptar el siguiente consentimiento informado.
+    </p>
+
+    <form id="consentimiento-form" action="" method="post">
+
+      <!-- DATOS DEL PACIENTE -->
+      <h2 class="section-title">Datos del paciente</h2>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" min="0" required />
+        </div>
+
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required />
+        </div>
+
+        <div class="field">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="domicilio">Domicilio</label>
+        <textarea id="domicilio" name="domicilio"></textarea>
+      </div>
+
+      <!-- CONTENIDO DEL CONSENTIMIENTO -->
+      <h2 class="section-title">Contenido del consentimiento</h2>
+
+      <details>
+        <summary>1. Naturaleza del tratamiento</summary>
+        <p>
+          Yo, el paciente arriba señalado, reconozco que he acudido a consulta dental para recibir evaluación,
+          diagnóstico y/o tratamiento odontológico, el cual puede incluir revisión clínica, limpieza dental,
+          toma de radiografías, evaluación periodontal, aplicación de anestesia local, restauraciones dentales
+          y otros procedimientos preventivos o terapéuticos que el odontólogo determine necesarios.
+        </p>
+      </details>
+
+      <details>
+        <summary>2. Información recibida</summary>
+        <p>
+          Declaro que el personal de Olmos Dental me ha explicado de manera clara y comprensible el diagnóstico,
+          los tratamientos posibles, los beneficios esperados, los riesgos, alternativas y consecuencias de no
+          realizar el tratamiento.
+        </p>
+      </details>
+
+      <details>
+        <summary>3. Riesgos y posibles complicaciones</summary>
+        <p>
+          Entiendo que todo tratamiento odontológico puede implicar riesgos como dolor, sensibilidad,
+          sangrado, inflamación, infecciones, reacciones adversas a la anestesia y la necesidad
+          de tratamientos adicionales.
+        </p>
+      </details>
+
+      <details>
+        <summary>4. Responsabilidades del paciente</summary>
+        <p>
+          Me comprometo a informar verazmente sobre mi historial médico, seguir indicaciones, acudir a citas
+          de seguimiento y notificar cualquier molestia posterior al tratamiento.
+        </p>
+      </details>
+
+      <details>
+        <summary>5. Fotografías y registros clínicos</summary>
+        <p>
+          Autorizo que mis fotografías, radiografías y modelos dentales sean utilizados con fines clínicos,
+          académicos y documentales.
+        </p>
+
+        <div class="field">
+          <label>Autorización para uso de fotografías:</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="autorizacion_fotos" value="si" required />
+              Sí autorizo
+            </label>
+
+            <label>
+              <input type="radio" name="autorizacion_fotos" value="no" />
+              No autorizo
+            </label>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>6. Confidencialidad</summary>
+        <p>
+          Toda mi información será tratada conforme a la Ley Federal de Protección de Datos Personales
+          en Posesión de los Particulares.
+        </p>
+      </details>
+
+      <details>
+        <summary>7. Derecho a retirar el consentimiento</summary>
+        <p>
+          Entiendo que puedo retirar mi consentimiento en cualquier momento, excepto cuando el procedimiento
+          ya esté en curso y su interrupción represente un riesgo.
+        </p>
+      </details>
+
+      <!-- ACEPTACIÓN FINAL -->
+      <div class="acceptance">
+        <input type="checkbox" id="acepto" name="acepto" required />
+        <label for="acepto">
+          He leído y comprendo el contenido de este consentimiento informado y acepto voluntariamente recibir
+          tratamiento odontológico en Olmos Dental.
+        </label>
+      </div>
+
+      <p class="firma-texto">
+        Al escribir mi nombre completo acepto que esta acción equivale a mi firma manuscrita para efectos de consentimiento.
+      </p>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="firma_paciente">Nombre del paciente (firma electrónica)</label>
+          <input type="text" id="firma_paciente" name="firma_paciente" required />
+        </div>
+
+        <div class="field">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required />
+        </div>
+      </div>
+
+      <!-- ODONTÓLOGO -->
+      <h2 class="section-title">Odontólogo tratante</h2>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="odontologo">Nombre del odontólogo</label>
+          <input type="text" id="odontologo" name="odontologo" />
+        </div>
+
+        <div class="field">
+          <label for="cedula">Cédula profesional</label>
+          <input type="text" id="cedula" name="cedula" />
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        ENVIAR CONSENTIMIENTO
+      </button>
+
+      <p class="legal-note">
+        La información proporcionada será tratada de manera confidencial conforme a la legislación aplicable en materia de protección de datos personales.
+      </p>
+
+    </form>
+  </div>
+
+</body>
+</html>
+

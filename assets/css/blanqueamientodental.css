@@ -1,0 +1,234 @@
+
+/* =============================== */
+/*    SECCIÓN: BLANQUEAMIENTO     */
+/* =============================== */
+
+.blanqueamiento-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 5rem;
+    color: #3a332c;
+    font-family: "Inter", sans-serif;
+}
+
+/* ---------- TÍTULOS ---------- */
+
+.blanqueamiento-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.blanqueamiento-subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.9rem;
+    color: #a89570;
+    margin-bottom: 0.3rem;
+}
+
+.blanqueamiento-header h2 {
+    font-size: 2.1rem;
+    margin: 0.5rem 0;
+    color: #2d2924;
+}
+
+.blanqueamiento-descripcion {
+    max-width: 700px;
+    margin: 0.4rem auto 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5a544b;
+}
+
+/* ---------- PRECIO + CTA ---------- */
+
+.blanqueamiento-precio-cta {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.8rem;
+    border: 1px solid #e4d7c3;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.06);
+    margin-bottom: 3rem;
+}
+
+.blanqueamiento-precio {
+    margin-bottom: 1rem;
+}
+
+.precio-principal {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ca9c45;
+    margin: 0;
+}
+
+.precio-msi {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    color: #6c645a;
+}
+
+.precio-msi strong {
+    color: #3c332b;
+}
+
+.precio-nota {
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    color: #7a7062;
+}
+
+.blanqueamiento-boton {
+    margin-top: 1rem;
+}
+
+.btn-blanqueamiento {
+    display: inline-block;
+    background: linear-gradient(135deg, #caa45a, #b98c3f);
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+}
+
+.btn-blanqueamiento:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.22);
+}
+
+/* ---------- TARJETAS DE INFORMACIÓN ---------- */
+
+.blanqueamiento-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.blanqueamiento-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.4rem;
+    border: 1px solid #e4d7c3;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+    transition: 0.25s ease;
+}
+
+.blanqueamiento-card:hover {
+    transform: translateY(-4px);
+}
+
+.blanqueamiento-card h3 {
+    margin-top: 0.9rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    color: #2f2a25;
+}
+
+.blanqueamiento-card p {
+    font-size: 0.95rem;
+    color: #5a544b;
+    line-height: 1.5;
+}
+
+.blanqueamiento-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* ---------- ANTES Y DESPUÉS ---------- */
+
+.blanqueamiento-antes-despues {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.blanqueamiento-antes-despues h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.antes-despues-texto {
+    max-width: 650px;
+    margin: 0 auto 1.8rem;
+    color: #6b635a;
+}
+
+.antes-despues-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.antes-img img,
+.despues-img img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10);
+}
+
+.antes-label,
+.despues-label {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5a5249;
+}
+
+/* ---------- MÉTODOS DE PAGO ---------- */
+
+.blanqueamiento-pago {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2rem;
+    margin-top: 3.5rem;
+    border: 1px solid #e4d7c3;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.blanqueamiento-pago h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.4rem;
+    color: #2e2a25;
+}
+
+.pago-linea {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #5e564c;
+}
+
+.pago-nota {
+    margin-top: 0.7rem;
+    font-size: 0.86rem;
+    color: #7f786f;
+}
+
+/* ---------- CTA FINAL ---------- */
+
+.blanqueamiento-cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+    .blanqueamiento-container,
+    .antes-despues-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blanqueamiento-img img,
+    .antes-img img,
+    .despues-img img {
+        height: 220px;
+    }
+}

@@ -1,0 +1,235 @@
+/* =============================== */
+/*        SECCIÓN RESINAS         */
+/* =============================== */
+
+.resinas-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 5rem;
+    color: #3a332c;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+
+.resinas-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.resinas-subtitulo {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.9rem;
+    color: #a89570;
+    margin-bottom: 0.3rem;
+}
+
+.resinas-header h2 {
+    font-size: 2.1rem;
+    margin: 0.5rem 0;
+    color: #2d2924;
+}
+
+.resinas-descripcion {
+    max-width: 700px;
+    margin: 0.4rem auto 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5a544b;
+}
+
+/* ---------- TARJETAS 3 COLUMNAS ---------- */
+
+.resinas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.resina-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.4rem 1.4rem 1.6rem;
+    border: 1px solid #e4d7c3;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    font-size: 0.95rem;
+    color: #5a544b;
+}
+
+.resina-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10);
+}
+
+.resina-img {
+    margin-bottom: 0.9rem;
+}
+
+.resina-img img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.resina-card h3 {
+    margin: 0.2rem 0 0.4rem;
+    font-size: 1.1rem;
+    color: #2f2a25;
+}
+
+.resina-card p {
+    margin: 0.2rem 0 0.6rem;
+    line-height: 1.5;
+}
+
+.resina-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.resina-card ul li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin: 0.12rem 0;
+    font-size: 0.9rem;
+}
+
+.resina-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0.25rem;
+    top: 0;
+    color: #c59b4a;
+    font-size: 1rem;
+}
+
+.resina-precio {
+    margin-top: 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #443b30;
+}
+
+/* ---------- COSTOS Y MÉTODOS DE PAGO ---------- */
+
+.resinas-precio-pago {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.8rem 1.8rem 2rem;
+    border: 1px solid #e4d7c3;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    margin-bottom: 2.5rem;
+}
+
+.resinas-precio-pago h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #2f2a25;
+}
+
+.resinas-precio-texto {
+    font-size: 0.95rem;
+    color: #6c645a;
+    margin-bottom: 1.4rem;
+    line-height: 1.6;
+}
+
+.resinas-pago-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+}
+
+.pago-columna h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    color: #3a3329;
+}
+
+.pago-columna p {
+    font-size: 0.95rem;
+    color: #5f574d;
+    margin: 0.1rem 0 0.4rem;
+}
+
+.pago-columna ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.3rem 0 0;
+}
+
+.pago-columna ul li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.92rem;
+    margin: 0.1rem 0;
+    color: #5c544a;
+}
+
+.pago-columna ul li::before {
+    content: "–";
+    position: absolute;
+    left: 0.15rem;
+    top: 0;
+    color: #c59b4a;
+    font-weight: 700;
+}
+
+.pago-nota {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: #867d72;
+}
+
+/* ---------- CTA FINAL ---------- */
+
+.resinas-cta {
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.btn-resinas {
+    display: inline-block;
+    background: linear-gradient(135deg, #caa45a, #b98c3f);
+    color: #fff;
+    padding: 0.9rem 1.9rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+}
+
+.btn-resinas:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.22);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 950px) {
+    .resinas-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .resinas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .resina-img img {
+        height: 200px;
+    }
+
+    .resinas-pago-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
